@@ -1,0 +1,23 @@
+# Composer
+/vendor/
+
+# Arquivos de ambiente
+.env
+
+# Uploads dos usuários
+/public/assets/uploads/*
+
+# Mantém a pasta uploads no Git
+!/public/assets/uploads/.gitkeep
+
+# VS Code
+.vscode/
+
+# PHPStorm
+.idea/
+
+# Node
+node_modules/
+
+# Logs
+*.log
