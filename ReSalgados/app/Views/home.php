@@ -1,7 +1,3 @@
-<section>
-
-    <h2>Bem-vindo!</h2>
-
-    <p>Os melhores salgados da cidade.</p>
-
-</section>
+<pre>
+<?php print_r($products); ?>
+</pre>

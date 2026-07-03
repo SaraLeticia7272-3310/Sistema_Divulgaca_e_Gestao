@@ -20,4 +20,13 @@ class ProductRepository
     {
         return $this->pdo instanceof PDO;
     }
+
+    public function findAll(): array
+    {
+        $sql = "SELECT * FROM produto ORDER BY nome";
+
+        $stmt = $this->pdo->query($sql);
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }

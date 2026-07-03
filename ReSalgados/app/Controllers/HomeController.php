@@ -13,8 +13,10 @@ class HomeController
     {
         $repository = new ProductRepository();
 
-        if ($repository->testConnection()) {
-            View::render('home');
-        }
+        $products = $repository->findAll();
+
+        View::render('home', [
+            'products' => $products
+        ]);
     }
 }
